@@ -54,3 +54,19 @@ body{
     cursor: pointer;
     background-color: rgba(143, 160, 153, 0.534);
 }
+.play-again-button {
+    height: 30px;
+    width: 70px;
+    background-color: rgb(119, 166, 236);
+    color: black;
+    border-radius: 6px;
+    border: black 1px solid;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .play-again-button:hover{
+    background-color: rgb(168, 101, 223);
+    cursor: pointer;
+  }

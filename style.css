@@ -3,9 +3,7 @@ body, html{
     height: 100%;
 }
 body{
-    /* align-items: start;
-    justify-content: center; */
-    grid-template-rows: 50px 200px 1fr;
+    grid-template-rows: 50px 50px 1fr;
     display: grid;
 }
 
@@ -17,9 +15,14 @@ body{
     grid-row-start: 1;
 }
 
-.players{
-    grid-template-columns: 1fr 1fr;
+.player{
+    margin-top: 80px;
+    display: grid;
     grid-row-start: 2;
+    font-size: 30px;
+    color: purple;
+    align-items: end;
+    justify-items: center;
 }
 
 .board{

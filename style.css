@@ -1,0 +1,53 @@
+body, html{
+    background-color: aquamarine;
+    height: 100%;
+}
+body{
+    /* align-items: start;
+    justify-content: center; */
+    grid-template-rows: 50px 200px 1fr;
+    display: grid;
+}
+
+.header{
+    font-size: 40px;
+    display: grid;
+    text-align: center;
+    align-items: end;
+    grid-row-start: 1;
+}
+
+.players{
+    grid-template-columns: 1fr 1fr;
+    grid-row-start: 2;
+}
+
+.board{
+    display: grid;
+    height: 300px;
+    width: 300px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  repeat(3, 1fr);
+    background-color: wheat;
+    font-size: 50px;
+    text-align: center;
+    grid-column-start: 2;
+}
+.container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-start: 3;
+}
+.cell{
+    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+.cell:hover{
+    cursor: pointer;
+    background-color: rgba(143, 160, 153, 0.534);
+}

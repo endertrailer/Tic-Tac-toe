@@ -1,8 +1,10 @@
-function gameBoard() {
+(function gameBoard() {
+    
     const row = 3;
     const column = 3;
     const board = [['', '', ''], ['', '', ''], ['', '', '']];
     
+
     function deRender(){
         const container = document.querySelector('.board');
         if(container.firstChild){
@@ -11,6 +13,7 @@ function gameBoard() {
         }
     }
     }
+
 
     function render() {
         deRender();
@@ -25,6 +28,7 @@ function gameBoard() {
         }
     }
     
+
     const players = [
     {
       name: 'player one',
@@ -36,15 +40,20 @@ function gameBoard() {
     }
   ];
 
+
   let activePlayer = players[0];
+
 
   const switchPlayerTurn = () => {
     activePlayer = activePlayer === players[0] ? players[1] : players[0];
   };
   
+
   const getPlayerMark = () => activePlayer.token;
 
+
   const player = document.querySelector('.player');
+
 
   const changePlayer = () => {
     if(activePlayer.token === 'X'){
@@ -54,8 +63,12 @@ function gameBoard() {
         player.textContent = "Player 2's Turn";
     }
   }
+
+
   let count = 0;
+
   let continueGame = true;
+
     function endGame(value){
         if(value === 'end'){
             if(activePlayer.token === 'O'){
@@ -72,6 +85,7 @@ function gameBoard() {
             continueGame = false;
         }
     }
+
 
     function addMark(){
         const container = document.querySelector('.board');
@@ -102,6 +116,7 @@ function gameBoard() {
             }
     }
     
+
     function getWinner(column, row){
         if(board[column][0] === board[column][1] && board[column][1] === board[column][2]){
             endGame('end');
@@ -118,10 +133,8 @@ function gameBoard() {
         }
     }
 
-
     render();
-    addMark();
-    const getBoard = () => board;
-}
 
-gameBoard();
+    addMark();
+})();
+

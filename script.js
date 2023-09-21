@@ -5,18 +5,8 @@
     const board = [['', '', ''], ['', '', ''], ['', '', '']];
     
 
-    function deRender(){
-        const container = document.querySelector('.board');
-        if(container.firstChild){
-        while (container.firstChild) {
-            container.removeChild(container.firstChild);
-        }
-    }
-    }
-
 
     function render() {
-        deRender();
         for (let i = 0; i < column; i++) {
             for (let j = 0; j < row; j++) {
                 const container = document.querySelector('.board');
@@ -134,7 +124,7 @@
     }
 
     render();
-
     addMark();
+    
 })();
 

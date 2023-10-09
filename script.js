@@ -4,8 +4,6 @@
     const column = 3;
     const board = [['', '', ''], ['', '', ''], ['', '', '']];
     
-
-
     function render() {
         for (let i = 0; i < column; i++) {
             for (let j = 0; j < row; j++) {
@@ -18,7 +16,7 @@
         }
     }
     
-
+    
     const players = [
     {
       name: 'player one',

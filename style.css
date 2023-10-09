@@ -1,6 +1,9 @@
 body, html{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    background-image: url(https://wallpaperaccess.com/full/1253115.jpg);
     height: 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 body{
     grid-template-rows: 50px 50px 1fr;
@@ -13,6 +16,7 @@ body{
     text-align: center;
     align-items: end;
     grid-row-start: 1;
+    color:rgb(68, 76, 185);
 }
 
 .player{
@@ -20,7 +24,7 @@ body{
     display: grid;
     grid-row-start: 2;
     font-size: 30px;
-    color: purple;
+    color: rgb(179, 15, 91);
     align-items: end;
     justify-items: center;
 }
